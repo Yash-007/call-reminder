@@ -56,7 +56,7 @@ func main() {
 	s := &http.Server{
 		Addr: ":3000",
 		Handler: http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			fmt.Println("request received")
+			fmt.Println("request received at: ", time.Now().Format("2006-01-02 15:04:05"))
 			// scheduleCall()
 		}),
 	}
