@@ -49,7 +49,7 @@ func scheduleCall() {
 func main() {
 	c := cron.New()
 	fmt.Println("time: ", time.Now().Format("2006-01-02 15:04:05"))
-	c.AddFunc("45 6 * * *", scheduleCall)
+	c.AddFunc("15 11 * * *", scheduleCall)
 	c.Start()
 	fmt.Println("Cron started")
 
